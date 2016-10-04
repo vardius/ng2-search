@@ -1,4 +1,4 @@
-import {Component, Output, EventEmitter, Optional} from '@angular/core';
+import {Component, Output, EventEmitter, Optional, Input} from '@angular/core';
 import {Config} from "./config";
 
 @Component({
@@ -7,12 +7,11 @@ import {Config} from "./config";
     styleUrls: ['./search.component.scss']
 })
 export class SearchComponent {
+    @Input() placeholder: string = '';
     @Output() search: EventEmitter<string> = new EventEmitter<string>();
 
-    protected placeholder:string = 'Search...';
-
     constructor(@Optional() config: Config) {
-        if (config) {
+        if (config && this.placeholder.length > 0) {
             this.placeholder = config.placeholder;
         }
     }
