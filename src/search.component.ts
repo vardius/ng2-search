@@ -11,8 +11,11 @@ export class SearchComponent {
     @Output() search: EventEmitter<string> = new EventEmitter<string>();
 
     constructor(@Optional() config: Config) {
-        if (config && this.placeholder.length > 0) {
+        if (config && this.placeholder.length === 0) {
             this.placeholder = config.placeholder;
+        }
+        if(this.placeholder.length === 0){
+            this.placeholder = 'Search...';
         }
     }
 
