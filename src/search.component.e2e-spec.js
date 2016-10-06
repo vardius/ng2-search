@@ -1,4 +1,4 @@
-describe('List Component', () => {
+describe('SearchComponent', () => {
     beforeEach(() => {
         browser.get('/');
     });
