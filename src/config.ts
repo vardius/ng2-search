@@ -1,5 +1,5 @@
 /**
- * This file is part of the angular2-search package.
+ * This file is part of the ng2-search package.
  *
  * (c) Rafał Lorenz <vardius@gmail.com>
  *
