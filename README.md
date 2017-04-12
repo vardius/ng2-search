@@ -1,5 +1,5 @@
 # Angular2 Search Module
-[![Build Status](https://travis-ci.org/Vardius/ng2-search.svg?branch=master)](https://travis-ci.org/Vardius/ng2-search)
+[![Build Status](https://travis-ci.org/vardius/ng2-search.svg?branch=master)](https://travis-ci.org/vardius/ng2-search)
 ## Installation
 ```bash
 $ npm install ng2-vardius-search --save-dev
